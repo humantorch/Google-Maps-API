@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Google Maps API</title>
+	<link rel="stylesheet" href="lib/styles/layout.css" />
+	<!--[if IE 6]>
+		<link rel="stylesheet" type="text/css" href="lib/styles/ie6.css" type="text/css" />
+	<![endif]-->
+</head>
+
+<body>
+	
+	<div id="mapBox"></div>
+	
+	<div id="widget">
+			<input disabled type="text" name="dist" value="0" id="dist" />
+			<input disabled type="text" name="sum_dist" value="0" id="sum_dist" />
+			<input disabled type="text" name="dyn_dist" value="0" id="dyn_dist" />
+			<select name="units" id="units">
+				<option value="km">Kilometers</option>
+				<option value="m">Meters</option>				
+			</select>
+
+			<input id="reset" type="reset" value="Clear" />
+	</div>
+	
+	<script src="lib/scripts/map.js"></script>
+	<script src="http://www.google.com/jsapi"></script>
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAoMRCx5gp8jQqKmaUfMMa2RQe9nZLK5moq5PwcsvsSWF2eB-wlBSnK-V52gzjev1opJReiEaDlqmfHA&amp;sensor=false">
+	</script>
+	<script>google.load("jquery", "1.3.2");</script>
+	<script>
+		$(document).ready(function(){_map.init();});
+		$(window).unload(function(){GUnload();_map.clearMap()});
+	</script>
+</body>
+</html>

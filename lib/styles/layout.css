@@ -1,0 +1,66 @@
+/* YUI reset.css */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0}
+
+body, html { 
+	width:100%; 
+	height:100%
+} 
+
+#mapBox {
+	width: 100%; 
+	height: 100%;
+	float: left;
+	position: relative;
+	z-index: 500;
+}
+
+#widget {
+	width: 214px;
+	height: 135px;
+	top: 50px; right: 5px;
+	z-index: 1000;
+	position: fixed;
+	background: transparent url(../../img/widget_bg.png) left top no-repeat;
+	font: .8em/1.1em Helvetica, Arial, sans-serif;
+	padding: 15px;
+}
+
+#widget input {
+	color: #000;
+	border: 0;
+	background-color: #fff;
+	margin: 2px 0;
+}
+
+input {
+	display: block;
+	width: 180px;
+	font-size: 10px;
+}
+
+select {
+	width: 180px;
+}
+
+#dist {
+	background: #fff url(../../img/dist.gif) right 1px no-repeat;
+}
+
+#sum_dist {
+	background: #fff url(../../img/sum_dist.gif) right 1px no-repeat;
+}
+
+#dyn_dist {
+	background: #fff url(../../img/dyn_dist.gif) right 1px no-repeat;
+}
+
+#units {
+	margin: 5px 0;
+}
+
+#widget #reset {
+	background-color: #ddd;
+	margin-top: 5px;
+	font-weight: bold;
+	border: 1px #aaa solid;
+}

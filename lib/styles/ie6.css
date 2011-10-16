@@ -1,0 +1,14 @@
+#mapBox {
+	width: 1000px !important;
+	float: left;
+}
+
+#widget {
+	float: left;
+	background: transparent url(../../img/widget_bg.gif) left top no-repeat;
+	margin: 30px 0 0 30px;
+}
+
+input {
+	margin-left: -30px !important;
+}
